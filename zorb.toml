@@ -1,0 +1,12 @@
+[package]
+name = "@crypto/xxhash"
+version = "0.1.0"
+description = "XXHash hash functions (xxh32, xxh64, xxh3) — transpiled from xxhash-rust v0.8.15"
+authors = ["The Zeta Foundation"]
+license = "MIT"
+
+[dependencies]
+
+[fmt]
+style = "zeta-strict"
+max_width = 100
