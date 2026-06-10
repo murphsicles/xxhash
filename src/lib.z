@@ -1,10 +1,12 @@
-// @crypto/xxhash — XXHash hash functions for Zeta
-//
-// Provides xxh32, xxh64, and xxh3 hash functions.
-// Use for checksums, hash tables, and data integrity verification.
-//
-// Fastest: xxh3 (when available)
-// Most portable: xxh64
-// 32-bit: xxh32
+// @crypto/xxhash — all hash modules (cfg feature gates removed, all compiled unconditionally)
 
+mod utils;
+mod xxh32_common;
+pub mod xxh32;
+pub mod const_xxh32;
+mod xxh64_common;
 pub mod xxh64;
+pub mod const_xxh64;
+mod xxh3_common;
+pub mod xxh3;
+pub mod const_xxh3;
